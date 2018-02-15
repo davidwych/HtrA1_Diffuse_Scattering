@@ -1,0 +1,11 @@
+source leaprc.gaff
+source oldff/leaprc.ff99SBildn
+
+na = createAtom Na QL 1.000
+set na element Na
+r = createResidue Na1
+add r na
+Na1 = createUnit Na1
+add Na1 r
+saveoff Na1 lithium.lib
+savepdb Na1 lithium.pdb

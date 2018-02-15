@@ -1,0 +1,6 @@
+source leaprc.gaff
+source oldff/leaprc.ff99SBildn
+loadoff sulfate.lib
+SUL = loadpdb sulfate.pdb
+check SUL
+quit

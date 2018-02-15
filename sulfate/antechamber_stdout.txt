@@ -1,0 +1,26 @@
+
+Welcome to antechamber 17.3: molecular input file processor.
+
+acdoctor mode is on: check and diagnosis problems in the input file.
+-- Check Format for pdb File --
+   Status: pass
+-- Check Unusual Elements --
+   Status: pass
+-- Check Open Valences --
+Warning: This molecule has no hydrogens nor halogens.
+         It is quite possible that there are unfilled valences.
+-- Check Geometry --
+      for those bonded
+      for those not bonded
+   Status: pass
+-- Check Weird Bonds --
+   Status: pass
+-- Check Number of Units --
+   Status: pass
+acdoctor mode has completed checking the input file.
+
+Info: Bond types are assigned for valence state (1) with penalty (1).
+Info: Total number of electrons: 50; net charge: -2
+
+Running: /Users/davidwych/anaconda3/bin/sqm -O -i sqm.in -o sqm.out
+

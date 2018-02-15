@@ -1,0 +1,6 @@
+source leaprc.gaff
+source oldff/leaprc.ff99SBildn
+SUL = loadmol2 sulfate_fixed_charges.gaff.mol2
+check SUL
+saveoff SUL sulfate.lib
+quit

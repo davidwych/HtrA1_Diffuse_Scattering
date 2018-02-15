@@ -1,0 +1,9 @@
+openeye-generated pdb ("NH4") and mol2 ("<0>") residue names replaced with "AMM"
+
+in original pdb file, hydrogen atoms had names "H 1", "H 2", "H 3", and "H 4",
+   to get them to match with the atomtypes from the ammonium.gaff.mol2 files
+   had to change them to "H", "H1", "H2", and "H3" respectively so that the
+   atom types would match after creating the `ammonium.lib` file
+
+original charge of gaff.mol2 file was 1.002, spread out the -0.002 needed over
+all atoms equally, with -0.0004 added to each charge in _fixed_charges.gaff.mol2

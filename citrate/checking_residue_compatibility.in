@@ -1,0 +1,7 @@
+source leaprc.gaff
+source oldff/leaprc.ff99SBildn
+loadamberparams citrate.frcmod
+loadoff citrate.lib
+CIT = loadpdb citrate.pdb
+check CIT
+quit

@@ -1,0 +1,8 @@
+source leaprc.gaff
+source oldff/leaprc.ff99SBildn
+loadamberparams citrate.frcmod
+CIT = loadmol2 citrate_fixed_charges.gaff.mol2
+list
+check CIT
+saveoff CIT citrate.lib
+quit
