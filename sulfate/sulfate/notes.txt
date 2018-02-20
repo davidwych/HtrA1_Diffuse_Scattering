@@ -1,0 +1,18 @@
+"oe-" prefix signifies files coming out of `openeye_tests.py`
+
+residue names in `oe_sulfate.pdb` were manually changed to "SUL" from "UNL"
+residue names in `oe_sulfate.mol2` were manually changed to "SUL" from "<0>"
+
+To get the library file to recognize the atoms in the pdb file correctly:
+- antechamber used to create `sulfate.gaff.mol2` file from `oe_sulfate.pdb` file with
+  bcc charges, and a total chage ("-nc") of -2
+- parmchk2 used to create `sulfate.frcmod` file (initially empty)
+- tleap loaded with gaff and FF99SNildn forcefields
+  - `sulfate.gaff.mol2` file loaded in under the variable name `SUL`
+  - used `saveoff SUL sulfate.lib` to save off the `SUL` unit/residue
+    with the correct atom types
+- then the pdb file can be loaded in and the atom types are mapped correctly
+
+original gaff.mol2 file had a total charge of -1.998000, so the missing -0.002 was
+added back in equally to each atoms (-0.0004 for each) to bring the net charge to 2
+in sulfate_fixed_charges.gaff.mol2

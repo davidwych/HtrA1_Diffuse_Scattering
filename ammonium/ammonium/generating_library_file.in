@@ -1,0 +1,7 @@
+source leaprc.gaff
+source oldff/leaprc.ff99SBildn
+AMM = loadmol2 ammonium_fixed_charges.gaff.mol2
+list
+check AMM
+saveoff AMM ammonium.lib
+quit

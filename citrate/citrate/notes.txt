@@ -1,0 +1,16 @@
+residue name was changed from "UNL" in the pdb file and "<0>" in the mol2
+    file (from openeyetools) to "CIT"
+
+antechamber used to go from the original mol2 file to `citrate.gaff.mol2` file
+    with bcc charges and a total charge of -2
+
+parmchk2 used to create `citrate.frcmod` file
+
+tleap loaded with GAFF and FF99SBildn forcefields
+- `citrate.frcmod` file loaded with `loadamberparams`
+- `citrate.gaff.mol2` file loaded in as unit `CIT` and checked
+- `citrate.lib` file created with `saveoff`
+
+charges in citrate.gaff.mol2 fixed with `fixing_charges.py`
+still off by -0.000007, spread out over the last decimal
+place of the chrages on the oxygens 
