@@ -9,3 +9,5 @@ The `CRYST1` information from the original PDB file was added back in to the top
 Ions and solute were generated using Open Eye Tools, and prepared using AMBER's `tleap`. The ions were then added to the supercells in numbers determined by their concentrations in the literature. Waters were prepared and added in the same way.
 
 More detailed information on the supercell preparation process can be found in the `HtrA1 Setup Notebook` jupyter notebook.
+
+The `*.X.sh` files are the input files used to submit the scripts for running on a SLURM cluster.
